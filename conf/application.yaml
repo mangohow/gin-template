@@ -1,0 +1,19 @@
+server:
+  host: "127.0.0.1"
+  port: 8080
+  name: "unknown"
+  mode: "Dev"
+
+mysql:
+  dataSourceName: "root:root@(127.0.0.1:3306)/blog?charset=utf8mb4&parseTime=true&loc=Local"
+  maxOpenConns: 20
+  maxIdleConns: 10
+
+logger:
+  level: "DEBUG"
+  filePath: "log_file"
+  fileName: "server.log"
+  maxFileSize: 1073741824
+  toFile: false
+  formatter: ""
+  caller: true
